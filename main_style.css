@@ -1,0 +1,87 @@
+```css
+/* 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    background-color: #121212; /* 아주 어두운 배경 */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.main-title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* 버튼 그리드 레이아웃 (2줄) */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2칸씩 배치 */
+    gap: 20px;
+}
+
+/* 버튼 카드 공통 스타일 */
+.menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+/* 마우스 올렸을 때 효과 */
+.menu-card:hover {
+    transform: translateY(-5px);
+    filter: brightness(1.1);
+}
+
+.menu-card h2 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    word-break: keep-all; /* 단어 단위 줄바꿈 */
+}
+
+/* 각 테마별 배경색 */
+.walk {
+    background: linear-gradient(135deg, #56ab2f, #a8e063); /* 산책: 초록 */
+}
+
+.ocean {
+    background: linear-gradient(135deg, #2b5876, #4e4376); /* 바다: 딥블루 */
+}
+
+.love {
+    background: linear-gradient(135deg, #302b63, #24243e); /* 이별: 어두운 보라/검정 */
+}
+
+.snow {
+    background: linear-gradient(135deg, #E0EAFC, #CFDEF3); /* 눈: 밝은 하늘색/흰색 */
+    color: #4a4a4a; /* 눈 테마만 글씨를 어둡게 */
+}
+
+/* 모바일 화면에서는 한 줄로 나오게 설정 */
+@media (max-width: 500px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+}
+```
