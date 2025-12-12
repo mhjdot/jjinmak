@@ -1,0 +1,145 @@
+/* 전체 페이지 기본 설정 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pretendard", sans-serif;
+    color: #f0f3ff;
+}
+
+/* 한강공원 밤 - 이별 버전 */
+body.hangang-night {
+    background: linear-gradient(
+        #060914 25%,
+        #0b1020 55%, 
+        #111c33 85%, 
+        #0a0e17 100%
+    );
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* 강 수면 반사 - 더 어둡고 잔잔하게 */
+body.hangang-night::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 35%;
+    background: linear-gradient(
+        rgba(25, 35, 55, 0.5),
+        rgba(15, 20, 35, 0.85)
+    );
+    backdrop-filter: blur(14px);
+    z-index: -2;
+}
+
+/* 💔 한강 난간 실루엣 추가 */
+body.hangang-night::after {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+
+    /* 난간 실루엣을 CSS로 그림 */
+    background:
+        /* 수평 난간 */
+        linear-gradient(to right, rgba(0, 0, 0, 0.45), rgba(0,0,0,0.6)),
+        
+        /* 세로 기둥들 */
+        repeating-linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.8) 0px,
+            rgba(0, 0, 0, 0.8) 12px,
+            transparent 12px,
+            transparent 40px
+        );
+
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* 제목 */
+.page-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #cfd7ff;
+    text-shadow: 0 0 12px rgba(100, 120, 200, 0.45);
+}
+
+/* 노래 카드 */
+.song-list {
+    width: 80%;
+    margin: 40px auto 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.song-item {
+    display: flex;
+    background: rgba(180, 200, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    align-items: center;
+    border: 1px solid rgba(140, 160, 210, 0.15);
+    box-shadow: 0 0 15px rgba(120, 140, 200, 0.18);
+    transform: translateY(0px);
+    transition: 0.3s ease;
+}
+
+/* 호버 시 감성적인 보라빛 강조 */
+.song-item:hover {
+    box-shadow: 0 0 25px rgba(150, 160, 255, 0.35);
+    border-color: rgba(160, 170, 255, 0.28);
+    transform: translateY(-4px);
+}
+
+.album {
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+    box-shadow: 0 0 12px rgba(150, 160, 240, 0.25);
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 22px;
+    color: #dbe0ff;
+    text-shadow: 0 0 6px rgba(120, 130, 200, 0.3);
+}
+
+.info p {
+    margin: 5px 0 12px;
+    font-size: 15px;
+    color: #b9c3ea;
+}
+
+.go-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: rgba(180, 200, 255, 0.08);
+    border-radius: 10px;
+    color: #e8ecff;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid rgba(200, 210, 255, 0.2);
+    transition: 0.25s;
+}
+
+/* 버튼 호버 시 은은한 빛 */
+.go-btn:hover {
+    background-color: rgba(200, 210, 255, 0.25);
+    box-shadow: 0 0 10px rgba(200, 210, 255, 0.65);
+}
