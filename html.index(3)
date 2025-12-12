@@ -22,7 +22,7 @@
         <!-- 1. 하얀 그리움 -->
         <div class="song-item">
             <img
-                src="fromis9_white_memory_album.jpg"
+                src="white.jpg"
                 alt="하얀 그리움 앨범 커버"
                 class="album"
             />
@@ -36,7 +36,7 @@
         <!-- 2. 듣는 편지 -->
         <div class="song-item">
             <img
-                src="40_listening_letter_album.jpg"
+                src="text.jpg"
                 alt="듣는 편지 앨범 커버"
                 class="album"
             />
@@ -50,7 +50,7 @@
         <!-- 3. 회전목마 -->
         <div class="song-item">
             <img
-                src="sokodomo_merry_go_round_album.jpg"
+                src="round.jpg"
                 alt="회전목마 앨범 커버"
                 class="album"
             />
