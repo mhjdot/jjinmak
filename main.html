@@ -1,126 +1,54 @@
-```css
-/* ocean.css */
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시원한 바다 느낌 노래 추천</title>
+    <!-- 여기 파일명이 ocean.css 여야 합니다 -->
+    <link rel="stylesheet" href="ocean.css">
+</head>
+<body class="ocean">
 
-/* 모든 요소에 박스 크기 계산 통일 (레이아웃 깨짐 방지) */
-* {
-    box-sizing: border-box;
-}
+    <h1 class="page-title">시원한 바다 느낌 노래 3곡</h1>
 
-/* 전체 페이지 기본 설정 */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
-    color: #eaf7ff;
-}
+    <div class="song-list">
 
-/* 바다 테마 배경 */
-body.ocean {
-    background: linear-gradient(#0b3d91 40%, #1b6fa8 80%, #69c4ff 100%);
-    background-attachment: fixed;
-    min-height: 100vh;
-}
+        <!-- 1번 노래: DPR LIVE -->
+        <div class="song-item">
+            <img class="album" src="1765547781319.jpg" alt="DPR LIVE 앨범">
+            
+            <div class="info">
+                <h2>DPR LIVE – Martini Blue</h2>
+                <p>몽환적이면서도 바다의 깊은 푸르름이 느껴지는 곡.</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=czftJ7E7wa4" target="_blank">듣기</a>
+            </div>
+        </div>
 
-/* 제목 */
-.page-title {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 34px;
-    font-weight: 700;
-    color: #dff4ff;
-    text-shadow: 0 0 10px rgba(223, 244, 255, 0.3);
-}
+        <!-- 2번 노래: TXT -->
+        <div class="song-item">
+            <img class="album" src="1765547781624.jpg" alt="TXT 앨범">
 
-/* 노래 카드 전체 리스트 */
-.song-list {
-    width: 80%;
-    max-width: 800px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 50px;
-}
+            <div class="info">
+                <h2>투모로우바이투게더 – 그냥 괴물을 살려두면 안 되는 걸까</h2>
+                <p>파란 계열의 강렬한 분위기와 감성적 메시지가 어우러진 곡.</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=ok5L_QxT1Vc" target="_blank">듣기</a>
+            </div>
+        </div>
 
-/* 노래 카드 개별 */
-.song-item {
-    display: flex;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 15px;
-    backdrop-filter: blur(6px);
-    align-items: center;
-    box-shadow: 0 0 18px rgba(150, 200, 255, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    transition: 0.25s ease;
-}
+        <!-- 3번 노래: 샵 (Sharp) -->
+        <div class="song-item">
+            <img class="album" src="1765547781730.jpg" alt="샵 앨범">
 
-/* 호버 시 물결처럼 강조 */
-.song-item:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 0 25px rgba(180, 230, 255, 0.45);
-}
+            <div class="info">
+                <h2>샵 – Sweety</h2>
+                <p>맑고 시원한 청량감이 느껴지는 2000s 감성 노래.</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=QHa6RdqCwKU" target="_blank">듣기</a>
+            </div>
+        </div>
 
-/* 앨범 이미지 */
-.album {
-    width: 130px;
-    height: 130px;
-    border-radius: 10px;
-    object-fit: cover;
-    margin-right: 20px;
-    background-color: rgba(255,255,255,0.2);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    flex-shrink: 0; /* 화면이 작아져도 이미지 찌그러짐 방지 */
-}
+    </div>
 
-/* 텍스트 영역 */
-.info {
-    flex: 1;
-}
-
-.info h2 {
-    margin: 0 0 8px 0;
-    font-size: 22px;
-    color: #ffffff;
-    word-break: keep-all; /* 단어 단위 줄바꿈 */
-}
-
-.info p {
-    margin: 0 0 15px 0;
-    font-size: 15px;
-    color: #caeaff;
-}
-
-/* 버튼 스타일 */
-.go-btn {
-    display: inline-block;
-    padding: 8px 18px;
-    background-color: rgba(180, 225, 255, 0.2);
-    border-radius: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    border: 1px solid rgba(200, 230, 255, 0.5);
-    transition: 0.2s;
-}
-
-.go-btn:hover {
-    background-color: #a0d7ff;
-    color: #0b3d91;
-    box-shadow: 0 0 15px rgba(180, 230, 255, 0.6);
-}
-
-/* 모바일 화면 대응 */
-@media (max-width: 600px) {
-    .song-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .album {
-        margin-right: 0;
-        margin-bottom: 15px;
-    }
-}
+</body>
+</html>
 ```
