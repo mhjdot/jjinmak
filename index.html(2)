@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이별할 때 듣는 노래</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="hangang-night">
+
+    <h1 class="page-title">이별할 때 듣는 노래 3곡</h1>
+
+    <div class="song-list">
+
+        <!-- 1. 임한별 – 이별하러 가는 길 -->
+        <div class="song-item">
+            <img src="./imhb.jpg" alt="임한별 앨범 이미지" class="album">
+            <div class="info">
+                <h2>이별하러 가는 길</h2>
+                <p>임한별</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=jT27daayn_k" target="_blank">바로가기</a>
+            </div>
+        </div>
+
+        <!-- 2. 윤하 – 먹구름 -->
+        <div class="song-item">
+            <img src="./younha.jpg" alt="윤하 먹구름 앨범 이미지" class="album">
+            <div class="info">
+                <h2>먹구름</h2>
+                <p>윤하</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=hrO-BgLjJ-Q" target="_blank">바로가기</a>
+            </div>
+        </div>
+
+        <!-- 3. 토이 – 그녀가 말했다 -->
+        <div class="song-item">
+            <img src="./toy.jpg" alt="토이 그녀가 말했다 앨범 이미지" class="album">
+            <div class="info">
+                <h2>그녀가 말했다</h2>
+                <p>토이 (with 권진아)</p>
+                <a class="go-btn" href="https://www.youtube.com/watch?v=EUFSDbnZ1o4" target="_blank">바로가기</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
