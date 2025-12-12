@@ -1,4 +1,11 @@
 ```css
+/* main.css */
+
+/* 박스 크기 통일 */
+* {
+    box-sizing: border-box;
+}
+
 /* 기본 설정 */
 body {
     margin: 0;
@@ -35,9 +42,10 @@ body {
 /* 버튼 카드 공통 스타일 */
 .menu-card {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 160px;
+    height: 180px;
     text-decoration: none;
     color: white;
     border-radius: 20px;
@@ -51,13 +59,20 @@ body {
 .menu-card:hover {
     transform: translateY(-5px);
     filter: brightness(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
 }
 
 .menu-card h2 {
-    margin: 0;
+    margin: 0 0 10px 0;
     font-size: 18px;
     line-height: 1.4;
-    word-break: keep-all; /* 단어 단위 줄바꿈 */
+    word-break: keep-all;
+}
+
+.menu-card p {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.8;
 }
 
 /* 각 테마별 배경색 */
@@ -75,7 +90,7 @@ body {
 
 .snow {
     background: linear-gradient(135deg, #E0EAFC, #CFDEF3); /* 눈: 밝은 하늘색/흰색 */
-    color: #4a4a4a; /* 눈 테마만 글씨를 어둡게 */
+    color: #4a4a4a; /* 눈 테마만 글씨 어둡게 */
 }
 
 /* 모바일 화면에서는 한 줄로 나오게 설정 */
