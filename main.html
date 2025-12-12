@@ -4,49 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>시원한 바다 느낌 노래 추천</title>
-    <!-- 여기 파일명이 ocean.css 여야 합니다 -->
-    <link rel="stylesheet" href="ocean.css">
+    <title>오늘의 분위기</title>
+    <!-- main.css 파일 연결 -->
+    <link rel="stylesheet" href="main.css">
 </head>
-<body class="ocean">
+<body>
 
-    <h1 class="page-title">시원한 바다 느낌 노래 3곡</h1>
+    <div class="container">
+        <h1 class="main-title">오늘, 어떤 노래를 들을까요?</h1>
+        
+        <div class="menu-grid">
+            <!-- 1. 산책 (index.html로 연결) -->
+            <a href="index.html" class="menu-card walk">
+                <h2>🌿 산책할 때 듣기 좋은 노래</h2>
+                <p>가볍게 걷기 좋은 플리</p>
+            </a>
 
-    <div class="song-list">
+            <!-- 2. 바다 (ocean.html로 연결) -->
+            <a href="ocean.html" class="menu-card ocean">
+                <h2>🌊 시원한 바다 느낌 노래</h2>
+                <p>청량하고 시원한 플리</p>
+            </a>
 
-        <!-- 1번 노래: DPR LIVE -->
-        <div class="song-item">
-            <img class="album" src="1765547781319.jpg" alt="DPR LIVE 앨범">
-            
-            <div class="info">
-                <h2>DPR LIVE – Martini Blue</h2>
-                <p>몽환적이면서도 바다의 깊은 푸르름이 느껴지는 곡.</p>
-                <a class="go-btn" href="https://www.youtube.com/watch?v=czftJ7E7wa4" target="_blank">듣기</a>
-            </div>
+            <!-- 3. 이별 (love.html로 연결 / 파일 없으면 알림) -->
+            <a href="love.html" class="menu-card love" onclick="if(!confirm('이동하시겠습니까? (파일이 없으면 오류가 뜹니다)')) return false;">
+                <h2>💔 이별할 때 듣기 좋은 노래</h2>
+                <p>슬픈 감성을 위로하는 플리</p>
+            </a>
+
+            <!-- 4. 눈 (white.html로 연결 / 파일 없으면 알림) -->
+            <a href="white.html" class="menu-card snow" onclick="if(!confirm('이동하시겠습니까? (파일이 없으면 오류가 뜹니다)')) return false;">
+                <h2>❄️ 눈 올 때 듣기 좋은 노래</h2>
+                <p>포근하고 조용한 플리</p>
+            </a>
         </div>
-
-        <!-- 2번 노래: TXT -->
-        <div class="song-item">
-            <img class="album" src="1765547781624.jpg" alt="TXT 앨범">
-
-            <div class="info">
-                <h2>투모로우바이투게더 – 그냥 괴물을 살려두면 안 되는 걸까</h2>
-                <p>파란 계열의 강렬한 분위기와 감성적 메시지가 어우러진 곡.</p>
-                <a class="go-btn" href="https://www.youtube.com/watch?v=ok5L_QxT1Vc" target="_blank">듣기</a>
-            </div>
-        </div>
-
-        <!-- 3번 노래: 샵 (Sharp) -->
-        <div class="song-item">
-            <img class="album" src="1765547781730.jpg" alt="샵 앨범">
-
-            <div class="info">
-                <h2>샵 – Sweety</h2>
-                <p>맑고 시원한 청량감이 느껴지는 2000s 감성 노래.</p>
-                <a class="go-btn" href="https://www.youtube.com/watch?v=QHa6RdqCwKU" target="_blank">듣기</a>
-            </div>
-        </div>
-
     </div>
 
 </body>
