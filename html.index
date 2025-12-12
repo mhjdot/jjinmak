@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>눈 올 때 듣기 좋은 노래</title>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Pretendard 폰트 -->
+    <link rel="stylesheet" as="style" crossorigin
+          href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+</head>
+
+<body class="winter">
+
+    <h1 class="page-title">❄️ 눈 올 때 듣기 좋은 노래 ❄️</h1>
+
+    <div class="song-list">
+
+        <!-- 1. 하얀 그리움 -->
+        <div class="song-item">
+            <img
+                src="white.jpg"
+                alt="하얀 그리움 앨범 커버"
+                class="album"
+            />
+            <div class="info">
+                <h2>하얀 그리움</h2>
+                <p>프로미스나인 (fromis_9)</p>
+                <a href="#" class="go-btn">🎧 노래 들으러 가기</a>
+            </div>
+        </div>
+
+        <!-- 2. 듣는 편지 -->
+        <div class="song-item">
+            <img
+                src="text.jpg"
+                alt="듣는 편지 앨범 커버"
+                class="album"
+            />
+            <div class="info">
+                <h2>듣는 편지</h2>
+                <p>40</p>
+                <a href="#" class="go-btn">🎧 노래 들으러 가기</a>
+            </div>
+        </div>
+
+        <!-- 3. 회전목마 -->
+        <div class="song-item">
+            <img
+                src="round.jpg"
+                alt="회전목마 앨범 커버"
+                class="album"
+            />
+            <div class="info">
+                <h2>회전목마</h2>
+                <p>소코도모</p>
+                <a href="#" class="go-btn">🎧 노래 들으러 가기</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
