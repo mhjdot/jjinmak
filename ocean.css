@@ -1,5 +1,8 @@
 ```css
-/* ocean.css */
+/* 모든 요소 박스 크기 통일 */
+* {
+    box-sizing: border-box;
+}
 
 /* 전체 페이지 기본 설정 */
 body {
@@ -26,7 +29,7 @@ body.ocean {
     text-shadow: 0 0 10px rgba(223, 244, 255, 0.3);
 }
 
-/* 노래 카드 전체 리스트 */
+/* 노래 리스트 컨테이너 */
 .song-list {
     width: 80%;
     max-width: 800px;
@@ -66,6 +69,7 @@ body.ocean {
     margin-right: 20px;
     background-color: rgba(255,255,255,0.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-shrink: 0;
 }
 
 /* 텍스트 영역 */
@@ -77,6 +81,7 @@ body.ocean {
     margin: 0 0 8px 0;
     font-size: 22px;
     color: #ffffff;
+    word-break: keep-all;
 }
 
 .info p {
