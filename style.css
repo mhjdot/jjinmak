@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Pretendard", sans-serif;
-    color: #eaf7ff; /* 아주 밝은 파란빛 텍스트 */
+    color: #eaf7ff;
 }
 
 /* 바다 테마 배경 */
@@ -19,7 +19,7 @@ body.ocean {
     margin-top: 40px;
     font-size: 34px;
     font-weight: 700;
-    color: #dff4ff; /* 밝은 파랑 */
+    color: #dff4ff;
 }
 
 /* 노래 카드 전체 리스트 */
@@ -34,12 +34,12 @@ body.ocean {
 /* 노래 카드 개별 */
 .song-item {
     display: flex;
-    background: rgba(255, 255, 255, 0.08); /* 투명한 하얀빛 → 바다 위 빛 */
+    background: rgba(255, 255, 255, 0.08);
     padding: 20px;
     border-radius: 15px;
     backdrop-filter: blur(6px);
     align-items: center;
-    box-shadow: 0 0 18px rgba(150, 200, 255, 0.25); /* 부드러운 푸른 빛 */
+    box-shadow: 0 0 18px rgba(150, 200, 255, 0.25);
     transition: 0.25s ease;
 }
 
@@ -56,7 +56,7 @@ body.ocean {
     border-radius: 10px;
     object-fit: cover;
     margin-right: 20px;
-    background-color: rgba(255,255,255,0.2); /* 빈칸일 때도 자연스럽도록 */
+    background-color: rgba(255,255,255,0.2);
 }
 
 /* 텍스트 영역 */
@@ -89,24 +89,4 @@ body.ocean {
     background-color: rgba(160, 215, 255, 0.5);
     box-shadow: 0 0 10px rgba(180, 230, 255, 0.8);
 }
-```                <a class="go-btn" href="<<여기에 유튜브 링크 입력>>" target="_blank">듣기</a>
-            </div>
-        </div>
-
-        <!-- 3번 노래 -->
-        <div class="song-item">
-            <!-- 여기에 3번 노래 사진 넣기 -->
-            <img class="album" src="<<여기에 앨범 이미지 경로 입력>>" alt="앨범 이미지">
-
-            <div class="info">
-                <h2>샵 – Sweety</h2>
-                <p>맑고 시원한 청량감이 느껴지는 2000s 감성 노래.</p>
-                <!-- https://www.youtube.com/watch?v=eG90LtY98yg -->
-                <a class="go-btn" href="<<여기에 유튜브 링크 입력>>" target="_blank">듣기</a>
-            </div>
-        </div>
-
-    </div>
-
-</body>
-</html>
+```
