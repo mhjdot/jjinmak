@@ -1,4 +1,6 @@
 ```css
+/* ocean.css */
+
 /* 전체 페이지 기본 설정 */
 body {
     margin: 0;
@@ -11,42 +13,48 @@ body {
 body.ocean {
     background: linear-gradient(#0b3d91 40%, #1b6fa8 80%, #69c4ff 100%);
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
 /* 제목 */
 .page-title {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 34px;
     font-weight: 700;
     color: #dff4ff;
+    text-shadow: 0 0 10px rgba(223, 244, 255, 0.3);
 }
 
 /* 노래 카드 전체 리스트 */
 .song-list {
     width: 80%;
+    max-width: 800px;
     margin: 40px auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding-bottom: 50px;
 }
 
 /* 노래 카드 개별 */
 .song-item {
     display: flex;
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 15px;
     backdrop-filter: blur(6px);
     align-items: center;
     box-shadow: 0 0 18px rgba(150, 200, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     transition: 0.25s ease;
 }
 
 /* 호버 시 물결처럼 강조 */
 .song-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(180, 230, 255, 0.45);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 25px rgba(180, 230, 255, 0.45);
 }
 
 /* 앨범 이미지 */
@@ -57,27 +65,32 @@ body.ocean {
     object-fit: cover;
     margin-right: 20px;
     background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* 텍스트 영역 */
+.info {
+    flex: 1;
+}
+
 .info h2 {
-    margin: 0;
+    margin: 0 0 8px 0;
     font-size: 22px;
-    color: #e9f7ff;
+    color: #ffffff;
 }
 
 .info p {
-    margin: 6px 0 12px;
+    margin: 0 0 15px 0;
     font-size: 15px;
     color: #caeaff;
 }
 
+/* 버튼 스타일 */
 .go-btn {
     display: inline-block;
-    margin-top: 6px;
-    padding: 8px 16px;
-    background-color: rgba(180, 225, 255, 0.25);
-    border-radius: 10px;
+    padding: 8px 18px;
+    background-color: rgba(180, 225, 255, 0.2);
+    border-radius: 20px;
     color: #ffffff;
     text-decoration: none;
     font-weight: 600;
@@ -86,7 +99,21 @@ body.ocean {
 }
 
 .go-btn:hover {
-    background-color: rgba(160, 215, 255, 0.5);
-    box-shadow: 0 0 10px rgba(180, 230, 255, 0.8);
+    background-color: #a0d7ff;
+    color: #0b3d91;
+    box-shadow: 0 0 15px rgba(180, 230, 255, 0.6);
+}
+
+/* 모바일 화면 대응 */
+@media (max-width: 600px) {
+    .song-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .album {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
 }
 ```
